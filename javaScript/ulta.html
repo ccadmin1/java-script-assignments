@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   <label>enter number</label> <input onchange="ulta()" id="inp">
+   <span id="show"></span>
+
+<script>
+    function ulta(){
+        let num = document.getElementById('inp').value;
+        let start = num.toString().split('').reverse().join('');
+        let rev = parseInt(start);
+
+        document.getElementById('show').innerHTML = ("the given number is reversed : "+rev+ "");
+    }
+</script>
+
+</body>
+</html>

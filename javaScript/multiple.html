@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+
+            <div class="text-center border border-primary bg-success p-3 text-dark bg-opacity-25 mx-auto mt-4" style="width: 500px;">
+                <form name="frm">
+                  <label>Enter Number</label><input type="number" id="inp" onchange="multi()"> <br>
+                  <label>Enter Number</label><input type="number" id="end" onchange="multi()">
+                 <button type="button" name="check" onclick="multi()">print</button>
+                </form>
+            </div>
+<script>
+
+    function multi(){
+        var inp,end;
+        inp = parseFloat(document.frm.inp.value);
+        end = parseFloat(document.frm.inp.value);
+        var key;
+        for(i=inp;i<=end;i++)
+
+                    {
+                        for(k=1;k<=10;k++)
+
+                    key = i*inp + "<br>";
+                    document.write("<br>"+i+"x"+inp+"="+key);
+                    }
+    }
+
+</script>
+
+
+</body>
+</html>

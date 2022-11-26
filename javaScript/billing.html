@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+    
+
+
+
+
+<form name="frm">
+    <div class="container">
+        <h2 class="text-center">Billing Table</h2>  
+        <div >
+          ABC MART <br>
+          GST NO: 122344455555 <br>
+          Address: ABC MART  <br>
+                   PERAMBRA  <br>
+                   CALICUT   <br>
+          
+        </div>     
+        <div class="right">
+          date: <br>
+          bill no: <br>
+          NO: 874765767566   <br>
+        </div>
+        <table class="table table-bordered">
+          
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Product code</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Discount</th>
+              <th>Remark</th>
+              <th>Total</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+            <td><input type="text" placeholder="product"></td>
+              <td><input type="number" name="t1" id="inputProductPrice" oninput="myFunction()"  ></td>
+              <td><input type="number" class="form-control" id="inputGST" oninput="myFunction()"></td>
+              <td><input type="number" disabled id="totalPrice"></td>
+            </tr>
+            <tr>
+             <td><input type="text" placeholder="product"></td>
+              <td><input type="number" id="inputProductPrice" oninput="myFunction()"  ></td>
+              <td><input type="number" class="form-control" id="inputGST" oninput="myFunction()"></td>
+              <td><input type="number" disabled id="totalPrice"></td>
+            </tr>
+            <tr>
+             <td><input type="text" placeholder="product"></td>
+              <td><input type="number" id="inputProductPrice" oninput="myFunction()" ></td>
+              <td><input type="number" class="form-control" id="inputGST" oninput="myFunction()"></td>
+              <td><input type="number" disabled id="totalPrice"></td>
+            </tr>
+             <tr>
+             <td><input type="text" placeholder="product"></td>
+              <td><input type="number" id="inputProductPrice" oninput="myFunction()"></td>
+              <td><input type="number" class="form-control" id="inputGST" oninput="myFunction()"></td>
+              <td><input type="number" disabled id="totalPrice"></td>
+            </tr>
+            <th>total</th>
+          </tbody>
+        </table>
+      </div>
+      <button onclick="myFunction()">total</button>
+
+</form>
+
+
+
+
+
+<script>
+
+    function myFunction()
+    {
+            var price = document.getElementById("inputProductPrice").value;
+            var gst = document.getElementById("inputGST").value;
+            var total = +price + +gst;
+            document.getElementById("totalPrice").innerHTML = total;
+             
+    }
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
